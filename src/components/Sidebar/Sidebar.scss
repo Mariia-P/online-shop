@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+
+@import '../../styles/mixins.scss';
+
+.sidebar {
+    display: none;
+
+    @include media(1200) {
+        display: block;
+        background-color: $light-color;
+        width: 25rem;
+        flex-shrink: 0;
+    }
+}

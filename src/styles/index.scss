@@ -1,0 +1,47 @@
+@import './variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &::before,
+    &::after {
+        @extend *;
+    }
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: $fz-default;
+    font-family: $ff-common;
+    color: $dark-color;
+}
+
+ul {
+    list-style-type: none;
+}
+
+fieldset {
+    border: none;
+}
+
+button,
+input {
+    font-size: $fz-default;
+    font-family: $ff-common;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.content-wrapper {
+    max-width: 145rem;
+    width: 100%;
+    margin: 0 auto;
+}

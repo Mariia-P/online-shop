@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+.footer {
+    text-align: center;
+    padding: 0.6rem 2 rem;
+    background-image: $secondary_lg;
+
+    &__copyright {
+        color: $light-color;
+        font-weight: $fw-normal;
+    }
+}

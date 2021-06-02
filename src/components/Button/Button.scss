@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+
+%base-button {
+    &:focus {
+        outline: 0.1rem solid $white-color;
+        outline-offset: 0.25rem;
+    }
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+
+    &__rect {
+        padding: 1rem 2.5rem;
+        border-radius: 0.3rem;
+    }
+
+    &--primary {
+        @extend %base-button;
+        background-image: $primary-lg;
+        color: $dark-color;
+        text-shadow: 0 1px 2px $light-color;
+        transition: filter 300ms ease, text-shadow 300ms ease;
+
+        &:hover {
+            filter: brightness(1.15);
+            text-shadow: 0 1px 2px $white-color;
+        }
+    }
+
+    &--secondary {
+        @extend %base-button;
+        background-color: $light-color;
+        transition: box-shadow 300ms ease, filter 300ms ease;
+
+        &:hover {
+            box-shadow: 0 0.7rem 1rem $shadow-color;
+            filter: brightness(1.15);
+        }
+    }
+}

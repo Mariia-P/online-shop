@@ -1,0 +1,17 @@
+//font
+$fz-default: 1.8rem;
+$ff-common: 'Roboto', sans-serif;
+$fw-normal: 500;
+$fw-bold: 700;
+
+//colors
+$primary-clr: #ffd89b;
+$secondary-clr: #19547b;
+$tertiary-clr: #2382c2;
+$light-color: rgb(225, 225, 225);
+$white-color: #fff;
+$dark-color: #111;
+
+$primary-lg: linear-gradient(to right, $primary-clr, $secondary-clr);
+$secondary_lg: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+$shadow-color: rgba(black, 0.8);

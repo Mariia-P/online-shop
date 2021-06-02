@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.header {
+    background-image: $primary-lg;
+    padding: 1rem 2rem;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        text-shadow: 0 2px 4px $light-color;
+    }
+
+    &__btn {
+        font-size: 1.4rem;
+        padding: 0.8rem 1.3rem;
+
+        @include media(576) {
+            font-size: 1.6rem;
+            padding: 1rem 2.5rem;
+        }
+    }
+}

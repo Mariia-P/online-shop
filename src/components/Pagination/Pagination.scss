@@ -1,0 +1,35 @@
+@import '../../styles/variables.scss';
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+    &__btn {
+        $size: 5rem;
+        width: $size;
+        height: $size;
+        border-radius: 50%;
+        flex-shrink: 0;
+        background-color: $light-color;
+        margin-right: 1rem;
+        outline: none;
+        transition: background-color 200ms ease, color 200ms ease;
+
+        &:last-child {
+            margin-right: 0;
+        }
+        &:not(&--active) {
+            &:hover {
+                background-color: darken($light-color, 10%);
+            }
+        }
+
+        &--active {
+            background-color: $secondary-clr;
+            color: $light-color;
+            cursor: default;
+        }
+    }
+}
